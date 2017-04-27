@@ -49,6 +49,7 @@ public class Firsts extends HttpServlet {
             	
             	HttpSession session = request.getSession();
             	session.setAttribute("User", u);
+            	session.setAttribute("editProfile",true);
             	 jspname = "output.jsp";
                // out.println(s);//request.setAttribute("message",s);
                  response.sendRedirect(request.getContextPath() +"/"+jspname);	
