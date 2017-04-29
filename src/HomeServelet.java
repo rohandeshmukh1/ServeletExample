@@ -35,9 +35,11 @@ public class HomeServelet extends HttpServlet {
 		User u = (User) session.getAttribute("User");
 		
 	 	String username  = u.getUsername();
+	 	
+	 
 		
 		String message = "welcome "  + username;
-		// set message to next jsp
+		// set message to next page
 		
 		session.setAttribute("message",message);
 		//response.sendRedirect(request.getContextPath() + nexturl);

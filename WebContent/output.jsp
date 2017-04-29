@@ -7,9 +7,8 @@
 <title>Welcome</title>
 </head>
 <body>
-<jsp:include page ="navbar.jsp"> </jsp:include>
+<jsp:include page ="navbar.jsp"></jsp:include>
 
-<a href ="HomeServelet">go to home page</a>
-<h1>welcome!</h1>
+ <a href ="HomeServelet">go to home page</a> 
 </body>
 </html>

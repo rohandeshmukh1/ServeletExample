@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<jsp:include page ="navbar.jsp"> </jsp:include>
+<jsp:include page ="navbar.jsp"></jsp:include>
 <h1>this is search page</h1>
 </body>
 </html>

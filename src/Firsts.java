@@ -35,6 +35,7 @@ public class Firsts extends HttpServlet {
             PrintWriter out = response.getWriter();
             String password = request.getParameter("password");
             String jspname;
+        
             User u = new User();
             String s;
             
@@ -42,17 +43,23 @@ public class Firsts extends HttpServlet {
            // out.println("<h1>your email id is : "+ email + "</h1>");
           //  response.sendRedirect("NewFile.jsp");
            // request.getRequestDispatcher("output.jsp").include(request, response);
+            	
             	u.setEmail(email);
             	u.setPassword(password);
             	u.setUsername("userid123");
             	u.setMotto("My Motto");
             	
+            	
+            	
             	HttpSession session = request.getSession();
             	session.setAttribute("User", u);
             	session.setAttribute("editProfile",true);
-            	 jspname = "output.jsp";
-               // out.println(s);//request.setAttribute("message",s);
-                 response.sendRedirect(request.getContextPath() +"/"+jspname);	
+            	
+          
+             jspname = "output.jsp";
+              // out.println(s);//request.setAttribute("message",s);
+                response.sendRedirect(request.getContextPath() +"/"+ jspname);	
+           //     getServletContext().getRequestDispatcher(nextpage).forward(request, response);
             	
             } else {
             	
